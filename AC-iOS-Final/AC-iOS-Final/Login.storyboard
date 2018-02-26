@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zcV-GP-kqf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="K28-pw-hsq">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="zcV-GP-kqf" customClass="LoginViewController" customModule="AC_iOS_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebb-2X-TaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meatly_logo" translatesAutoresizingMaskIntoConstraints="NO" id="z9O-pR-LKX">
+                                <rect key="frame" x="75" y="31" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z9O-pR-LKX" secondAttribute="height" multiplier="1:1" id="0zK-KI-eT4"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Weq-fv-dpc">
+                                <rect key="frame" x="75" y="315" width="225" height="108"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHJ-3i-UD0">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5O-gh-BDB">
+                                        <rect key="frame" x="0.0" y="39" width="225" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-cO-Xeb">
+                                        <rect key="frame" x="0.0" y="78" width="225" height="30"/>
+                                        <state key="normal" title="Login/Register"/>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="zcV-GP-kqf" eventType="touchUpInside" id="8Sp-gn-GQl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z9O-pR-LKX" firstAttribute="centerX" secondItem="ebb-2X-TaJ" secondAttribute="centerX" id="4t3-fA-MHz"/>
+                            <constraint firstItem="Weq-fv-dpc" firstAttribute="centerX" secondItem="ebb-2X-TaJ" secondAttribute="centerX" id="5uA-Hy-GQs"/>
+                            <constraint firstItem="z9O-pR-LKX" firstAttribute="top" secondItem="H3p-Ww-a5r" secondAttribute="top" constant="11" id="EW3-pc-5eo"/>
+                            <constraint firstItem="Weq-fv-dpc" firstAttribute="top" secondItem="z9O-pR-LKX" secondAttribute="bottom" constant="59" id="Qv4-ul-WTP"/>
+                            <constraint firstItem="z9O-pR-LKX" firstAttribute="width" secondItem="ebb-2X-TaJ" secondAttribute="width" multiplier="0.6" id="c2S-5f-GM5"/>
+                            <constraint firstItem="Weq-fv-dpc" firstAttribute="width" secondItem="z9O-pR-LKX" secondAttribute="width" id="fyQ-Ku-Pnc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H3p-Ww-a5r"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="BHJ-3i-UD0" id="Ins-pO-2Yc"/>
+                        <outlet property="passwordTextField" destination="U5O-gh-BDB" id="87F-rq-ZHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Er4-Ax-L96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="259.52023988005999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="meatly_logo" width="171" height="152"/>
+    </resources>
+</document>
