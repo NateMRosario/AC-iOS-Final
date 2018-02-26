@@ -27,9 +27,8 @@
                                     <constraint firstAttribute="width" secondItem="iFZ-ip-jEz" secondAttribute="height" multiplier="1:1" id="vEJ-cF-0GQ"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add a Description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-Hy-Exd">
-                                <rect key="frame" x="16" y="447" width="343" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add a Description..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-Hy-Exd">
+                                <rect key="frame" x="16" y="447" width="343" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -39,6 +38,10 @@
                         <constraints>
                             <constraint firstItem="iFZ-ip-jEz" firstAttribute="width" secondItem="Hv8-Wc-SP3" secondAttribute="width" id="4oC-BR-R3j"/>
                             <constraint firstItem="iFZ-ip-jEz" firstAttribute="centerX" secondItem="Hv8-Wc-SP3" secondAttribute="centerX" id="8B9-5d-bht"/>
+                            <constraint firstItem="Ht8-Hy-Exd" firstAttribute="leading" secondItem="ceB-ab-NCa" secondAttribute="leading" constant="16" id="TSU-YZ-tZB"/>
+                            <constraint firstItem="ceB-ab-NCa" firstAttribute="trailing" secondItem="Ht8-Hy-Exd" secondAttribute="trailing" constant="16" id="fn3-Kd-WFR"/>
+                            <constraint firstItem="ceB-ab-NCa" firstAttribute="bottom" secondItem="Ht8-Hy-Exd" secondAttribute="bottom" constant="8" id="k8s-P7-ZLL"/>
+                            <constraint firstItem="Ht8-Hy-Exd" firstAttribute="top" secondItem="iFZ-ip-jEz" secondAttribute="bottom" constant="8" id="ktn-Mh-LR0"/>
                             <constraint firstItem="iFZ-ip-jEz" firstAttribute="top" secondItem="ceB-ab-NCa" secondAttribute="top" id="zJQ-Wn-Tbo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ceB-ab-NCa"/>
@@ -91,7 +94,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1L-i5-JrO">
-                                                    <rect key="frame" x="0.0" y="379" width="371" height="168"/>
+                                                    <rect key="frame" x="8" y="387" width="355" height="152"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -99,12 +102,12 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="s1L-i5-JrO" firstAttribute="top" secondItem="8mT-Yj-Yt9" secondAttribute="bottom" id="5Hv-mi-tLg"/>
+                                            <constraint firstItem="s1L-i5-JrO" firstAttribute="top" secondItem="8mT-Yj-Yt9" secondAttribute="bottom" constant="8" id="5Hv-mi-tLg"/>
                                             <constraint firstItem="8mT-Yj-Yt9" firstAttribute="width" secondItem="ez8-5X-Rz7" secondAttribute="width" id="ZSL-Yc-ynU"/>
-                                            <constraint firstAttribute="trailing" secondItem="s1L-i5-JrO" secondAttribute="trailing" id="bP7-gT-G7B"/>
-                                            <constraint firstItem="s1L-i5-JrO" firstAttribute="leading" secondItem="ez8-5X-Rz7" secondAttribute="leading" id="dnh-Hx-Ioq"/>
+                                            <constraint firstAttribute="trailing" secondItem="s1L-i5-JrO" secondAttribute="trailing" constant="8" id="bP7-gT-G7B"/>
+                                            <constraint firstItem="s1L-i5-JrO" firstAttribute="leading" secondItem="ez8-5X-Rz7" secondAttribute="leading" constant="8" id="dnh-Hx-Ioq"/>
                                             <constraint firstItem="8mT-Yj-Yt9" firstAttribute="centerX" secondItem="ez8-5X-Rz7" secondAttribute="centerX" id="h0I-jb-9a1"/>
-                                            <constraint firstAttribute="bottom" secondItem="s1L-i5-JrO" secondAttribute="bottom" id="tTo-9q-iI2"/>
+                                            <constraint firstAttribute="bottom" secondItem="s1L-i5-JrO" secondAttribute="bottom" constant="8" id="tTo-9q-iI2"/>
                                             <constraint firstItem="8mT-Yj-Yt9" firstAttribute="top" secondItem="ez8-5X-Rz7" secondAttribute="topMargin" id="zrC-m3-xyd"/>
                                         </constraints>
                                         <connections>

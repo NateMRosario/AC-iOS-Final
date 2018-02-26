@@ -24,6 +24,10 @@ class FeedViewController: UIViewController {
         authUserService.delegate = self
         feedCollectionView.delegate = self
         feedCollectionView.dataSource = self
+        // auto sizing cell
+//        if let flowLayout = feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+//            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+//        }
         loadPosts()
     }
     
@@ -58,6 +62,8 @@ extension FeedViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeedCell", for: indexPath) as! FeedCollectionCell
         let post = posts[indexPath.row]
         cell.feedTextView.text = post.comment
+        cell.feedImageView.layer.borderWidth = 1
+        cell.feedTextView.layer.borderWidth = 1
         
         if let imageURL = post.image{
             FirebaseStorageManager.shared.retrieveImage(imgURL: imageURL, completionHandler: { (image) in

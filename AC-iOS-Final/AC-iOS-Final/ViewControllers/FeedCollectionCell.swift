@@ -13,5 +13,9 @@ class FeedCollectionCell: UICollectionViewCell {
     @IBOutlet weak var feedImageView: UIImageView!
     @IBOutlet weak var feedTextView: UITextView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
     
 }
